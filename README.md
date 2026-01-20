@@ -149,7 +149,7 @@ static int kmod_init(void) {
 static void kmod_exit(void) {
     printk(KERN_INFO "kmod: Cleaning up the kmod module\n");
     proc_remove(kmod_proc_entry);
-    printk("kmod: /proc/%s removed successfully\n", DRIVER_NAME);
+    printk(KERN_INFO "kmod: /proc/%s removed successfully\n", DRIVER_NAME);
 }
 
 module_init(kmod_init);
