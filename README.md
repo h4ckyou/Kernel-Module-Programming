@@ -1,6 +1,6 @@
 # Kernel Module Programming
 
-This is my setup for the kernel i use
+This is the setup process for the kernel environment (initramfs + qemu setup) I made use of
 
 ```bash
 git clone --depth=1 --branch v6.8 \
