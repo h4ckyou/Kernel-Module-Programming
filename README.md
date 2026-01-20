@@ -196,5 +196,7 @@ qemu-system-x86_64 \
   -nographic -s
 ```
 
-
+### References
+- https://sysprog21.github.io/lkmpg/
+- https://www.youtube.com/watch?v=iSiyDHobXHA
 
