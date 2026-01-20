@@ -170,7 +170,7 @@ clean:
 
 - start.sh
 
-```
+```bash
 #!/bin/bash
 
 # Go to initramfs folder
