@@ -57,7 +57,7 @@ This makes creating the device file a bit harder since we wouldn't know the majo
 
 To resolve it, we can read the `/proc/devices` file which would hold the major number of our registered char device, or we can make the driver create a device file using the `device_create` function after a successful registration and `device_destroy` during the call to `cleanup_module` .
 
-Using `register_chrdev` is wasteful however, because on using that, the kernel internally **reserves all minor numbers from 0 to 255** for that **major number**... and that's wasteful is your module only needs say, one device
+Using `register_chrdev` is wasteful however, because on using that, the kernel internally **reserves all minor numbers from 0 to 255** for that **major number**... and that's wasteful if your module only needs say, one device
 
 The modern way is to make use of the `cdev` interface
 
