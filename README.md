@@ -176,11 +176,9 @@ clean:
 # Go to initramfs folder
 cd initramfs || { echo "initramfs folder not found"; exit 1; }
 
-# Check if kmod.ko exists
-if [ ! -f "kmod.ko" ] && [ -f "../kmod.ko" ]; then
-    echo "Copying kmod.ko into initramfs"
-    cp ../kmod.ko .
-fi
+echo "Updating kmod.ko in initramfs"
+rm -f kmod.ko
+cp ../kmod.ko .
 
 # Create cpio.gz initramfs
 echo "Packing initramfs..."
