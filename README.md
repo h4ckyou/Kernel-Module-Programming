@@ -198,3 +198,4 @@ qemu-system-x86_64 \
 - https://sysprog21.github.io/lkmpg/
 - https://www.youtube.com/watch?v=iSiyDHobXHA
 
+I might be learning but not upload my scripts here..
